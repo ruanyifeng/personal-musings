@@ -16,3 +16,15 @@ Theorem AI_isomorphic_to_nat : AI -> nat /\ nat -> AI.
 Proof.
   intuition.
   Aborted.
+
+
+Theorem AI_does_not_exist : ~ exists AI.
+Proof.
+  omega.
+  intuition.
+  unfold "~".
+  intros.
+  intuition.
+  auto.
+  crush.
+  Aborted.
